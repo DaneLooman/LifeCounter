@@ -26,6 +26,11 @@ const subtractP2 = () =>{
     document.getElementById('player2life').textContent = newTotal
 }
 
+const reset = () =>{
+    document.getElementById('player1life').textContent = 20
+    document.getElementById('player2life').textContent = 20
+}
+document.querySelector('#reset').addEventListener('click', () => reset())
 document.querySelector('#addP1').addEventListener('click', () => addP1())
 document.querySelector('#addP2').addEventListener('click', () => addP2())
 document.querySelector('#subtractP1').addEventListener('click', () => subtractP1())
